@@ -1,0 +1,57 @@
+{
+  "name": "routing-state",
+  "version": "0.1.0",
+  "private": true,
+  "main": "build/index.js",
+  "dependencies": {
+    "@airbrake/browser": "^2.1.7",
+    "@simplybusiness/mobius-simplybusiness": "1.6.0-beta.4",
+    "@xstate/fsm": "^1.6.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.4.4",
+    "prettier": "^2.4.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:embed": "webpack --config webpack.config.js",
+    "build:minimal": "webpack --config webpack.minimal.js",
+    "test": "react-scripts test",
+    "test:ci": "react-scripts test --watchAll=false",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

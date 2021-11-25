@@ -1,0 +1,71 @@
+:root {
+  --embed-padding: 32px;
+}
+
+body {
+  margin: 0;
+  font-family: museosans, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html,
+.sb-embedded {
+  height: 100%;
+}
+
+.sb-embedded-app {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  /* align-items: stretch; */
+  /* padding: 32px; */
+  font-size: 1em;
+}
+
+/* @media screen and (min-width: 600px) {
+  .sb-embedded-app {
+    padding: 48px;
+  }
+} */
+
+.sb-embedded-app__nav {
+  display: flex;
+  flex-direction: column;
+  min-width: 20%;
+  align-items: space-between;
+  font-size: 24px;
+  background: #f3f3f3;
+}
+
+.sb-embedded-app__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sb-embedded-app__main {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  font-size: 24px;
+  padding: var(--embed-padding);
+  /* width: 100%; */
+}
+
+.sb-embedded-app__actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 24px;
+  height: 64px;
+  padding: 0 var(--embed-padding);
+  border-top: 1px solid #e2e2e2;
+}
+
+.sb-embedded-app__actions button:first-child {
+  margin-right: 16px;
+}
